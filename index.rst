@@ -1,7 +1,11 @@
-My Test Documentation
----------------------
+In-Product Scripts
+------------------
 
 .. toctree::
-   :glob:
+   :maxdepth: 2
 
-   docs/*
+   1_basics
+   2_validation
+   3_metrics
+   4_reporting
+   5_orchestration
