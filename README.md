@@ -2,8 +2,9 @@
 
 Example scripts and rules for use in Resilient playbooks.
 
-This documentation uses [Sphinx](http://sphinx-doc.org/).
-To build:
+
+To build HTML versions of this documentation using [Sphinx](http://sphinx-doc.org/):
 ```
-make html
+pip install -r requirements.txt
+make clean html
 ```

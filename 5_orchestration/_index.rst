@@ -1,7 +1,7 @@
-Timestamps and Metrics
+Incident Orchestration
 ----------------------
 
 .. toctree::
    :glob:
 
-   3_metrics/*
+   *
