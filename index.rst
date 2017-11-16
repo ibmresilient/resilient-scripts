@@ -5,7 +5,6 @@ In-Product Scripts
    :maxdepth: 2
 
    1_basics/_index
-   2_validation/_index
-   3_metrics/_index
-   4_reporting/_index
-   5_orchestration/_index
+   2_metrics_and_reporting/_index
+   3_orchestration/_index
+   4_validation/_index

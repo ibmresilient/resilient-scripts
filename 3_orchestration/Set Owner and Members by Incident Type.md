@@ -29,7 +29,7 @@ if "Some Other Type" in incident.incident_type_ids:
 #    Here we **add** the new members to the existing list,
 #    don't just overwrite the existing list (which would remove members)!
 if "Malware" in incident.incident_type_ids:
-   incident.members = incident.members + ["Another_Group_Name", "User_Email@example.com"]
+   incident.members = list(incident.members) + ["Another_Group_Name", "User_Email@example.com"]
 ```
 
 ## Create the Rule

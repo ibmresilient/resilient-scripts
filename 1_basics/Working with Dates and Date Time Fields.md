@@ -49,7 +49,7 @@ ONE_HOUR = 1000 * 60 * 60
 ONE_DAY = ONE_HOUR * 24
 
 dt_tomorrow = Date(dt_now.getTime() + ONE_DAY)
-log.info("Now: {}".format(dt_tomorrow))
+log.info("Tomorrow is: {}".format(dt_tomorrow))
 
 # Set the incident discovered-date
 incident.discovered_date = dt_now

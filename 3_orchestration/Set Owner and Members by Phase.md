@@ -29,7 +29,7 @@ elif incident.phase_id == 'Some Other Phase':
 #    Here we **add** the new members to the existing list,
 #    don't just overwrite the existing list (which would remove members)!
 if incident.phase_id == 'Phase_Name':
-   incident.members = incident.members + ["Group_Name", "User_Email@example.com"]
+   incident.members = list(incident.members) + ["Group_Name", "User_Email@example.com"]
 ```
 
 ## Create the Rule
