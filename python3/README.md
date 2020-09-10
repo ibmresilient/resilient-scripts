@@ -12,7 +12,7 @@ Module Importation is possible with the python 3 scripting feature and a number 
 Provided are a number of scripts which demonstrate usage of modules in the python 3 scripting runtime. These scripts are : 
 
 + email-artifact-parsing.py -- A Script which uses both the email and hashlib modules to work with an Email Message artifact file. Parses the email message and extracts artifacts from the parsed email. Any attachments found in the email message are hashed with the hashlib module and a MD5, SHA-1 and SHA-256 hash is stored.
-+ malware-hash-matcher.py -- A script which uses hashlib to compare a hash artifact against a small blocklist of known malware hashes. If a match is found, the parent incident is updated with a warning the the severity is set to High. 
++ malware-hash-matcher.py -- A script which uses hashlib to compare a hash artifact against a small blocklist of known malware hashes. If a match is found, the parent incident is updated with a warning the severity is set to High. 
 
 ## Context Objects 
 The Resilient in-product script runtime contains a representation of business objects present in the system which provide context for a script to perform operations based on contains or to update the respective business objects. Provided are a number of example scripts for working with context objects: 

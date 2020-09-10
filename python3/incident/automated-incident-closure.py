@@ -11,14 +11,10 @@ if incident.confirmed == False:
     incident.name = "False Positive"
     # log.info(str(incident.resolution_summary.content))
     incident.description = falsePos
-# log.info(str(Summary.content))
-# if not Summary.content:
-Summ = ""
-if incident.resolution_summary is not None:
-    Summ = incident.resolution_summary
-    incident.resolution_summary = Summ
-else:
-    incident.resolution_summary = principal.display_name + " has yet to provide the appropriate resolution information." 
+
+if incident.resolution_summary is None:
+    incident.resolution_summary = principal.display_name + \
+        " has yet to provide the appropriate resolution information."
 if not incident.resolution_id:
     incident.resolution_id = "Resolved"
     incident.plan_status = “C”
