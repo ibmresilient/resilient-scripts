@@ -1,5 +1,7 @@
 # (c) Copyright IBM Corp. 2010, 2020. All Rights Reserved.
 
+# Assigns a task to the current user on closing the task if it doesn't have an owner
+
 if not task.owner_id:
     if principal.type != "user":
         log.error("Cannot run as '{}' {}".format(
