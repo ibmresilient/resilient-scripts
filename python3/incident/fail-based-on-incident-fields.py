@@ -3,5 +3,5 @@ if 'X' in incident.name:
     helper.fail("The name must not contain 'X'.")
 
 # Validate length of the incident name
-if len(incident.name) > 100
-helper.fail("The name must be less than 100 characters.")
+if len(incident.name) > 100:
+    helper.fail("The name must be less than 100 characters.")
