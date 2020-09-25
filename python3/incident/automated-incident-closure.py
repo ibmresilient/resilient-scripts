@@ -17,4 +17,4 @@ if incident.resolution_summary is None:
         " has yet to provide the appropriate resolution information."
 if not incident.resolution_id:
     incident.resolution_id = "Resolved"
-    incident.plan_status = “C”
+    incident.plan_status = "C"
