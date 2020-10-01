@@ -14,6 +14,13 @@ Provided are a number of scripts which demonstrate usage of modules in the pytho
 + email-artifact-parsing.py -- A Script which uses both the email and hashlib modules to work with an Email Message artifact file. Parses the email message and extracts artifacts from the parsed email. Any attachments found in the email message are hashed with the hashlib module and a MD5, SHA-1 and SHA-256 hash is stored.
 + malware-hash-matcher.py -- A script which uses hashlib to compare a hash artifact against a small blocklist of known malware hashes. If a match is found, the parent incident is updated with a warning the severity is set to High.
 
+### Pre-process and post-process scripts for workflow function
+
+Provided are two scripts that show how module imports can be used in pre- and post-process scripts for workflow functions.
+
++ `pre-process-task-utils.py` -- This script is a simple demonstration of using the json module in a pre-process script. A custom payload dictionary is converted into a json string and added to the inputs object for further processing in a task_utils workflow function.
++ `post-process-whois.py` -- This script makes use of the json module to easily parse and format the results coming from the fn_whois workflow function. The BeautifulSoup module is then used to enrich the incident by preparing an incident note with a rich text format.
+
 ## Context Objects
 
 The Resilient in-product script runtime contains a representation of business objects present in the system which provide context for a script to perform operations based on contains or to update the respective business objects. Provided are a number of example scripts for working with context objects:
