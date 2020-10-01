@@ -1,3 +1,5 @@
+# (c) Copyright IBM Corp. 2010, 2020. All Rights Reserved.
+
 # Create a new associated incident
 emailmessage.createAssociatedIncident("My new incident", "admin@co3sys.com")
 

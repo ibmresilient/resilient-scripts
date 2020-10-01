@@ -1,3 +1,5 @@
+# (c) Copyright IBM Corp. 2010, 2020. All Rights Reserved.
+
 # A script to parse an email message and add artifacts to the incident corresponding to certain message headers and contents.
 
 # Import the email modules we'll need

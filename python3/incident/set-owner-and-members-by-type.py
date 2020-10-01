@@ -1,3 +1,5 @@
+# (c) Copyright IBM Corp. 2010, 2020. All Rights Reserved.
+
 # Script to set incident owner and members based on Incident Type(s).
 # To be run when the incident type changes.
 

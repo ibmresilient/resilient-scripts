@@ -1,3 +1,5 @@
+# (c) Copyright IBM Corp. 2010, 2020. All Rights Reserved.
+
 if incident.confirmed == False:
     incident.resolution_id = "Not an Issue"
     # This portion will take the original incident title and description and throw them to notes.
