@@ -413,7 +413,7 @@ class EmailProcessor(object):
         Returns a new set of valid addresses.
         """
         octets = anAddress.split(".")
-        octetsAsIntArray = map(int, octets)
+        octetsAsIntArray = list(map(int, octets))
         if (len(octets) != 4) or max(octetsAsIntArray) > 255:
             return None
         else:
@@ -485,8 +485,9 @@ class EmailProcessor(object):
 
                 self.printList(u"Found {0} ( {1} )".format(
                     artifactType, description), dataList)
-                map(lambda theArtifact: self.addUniqueArtifact(
-                    theArtifact, artifactType, description), dataList)
+
+                for x in dataList:
+                    self.addUniqueArtifact(str(x), artifactType, description)
             else:
                 log.debug(u"Could not find artifact {0} for regex {1}".format(
                     artifactType, regex))
