@@ -40,3 +40,6 @@ The Resilient in-product script runtime contains a representation of business ob
   + `associated-with-incident.py` -- Script which uses the  helper context object to find incidents and then associates the email message with an incident returned from the query.
   + `create-associated-incident.py` -- Script which creates a new incident which will be associated with the email message the script is ran on. Further changes to this new incident can be made in the script.
   + `get-body-html-raw.py` -- Script that gets the full raw html body of an email message.
+  + `email_sample_script.py` -- This the Python 3 version of the email sample script.
++ Datatable
+  + `datatable-addrow-onincident.py` -- Adds a row to a datatable of an incident and fills the columns with values.
