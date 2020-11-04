@@ -43,3 +43,7 @@ The Resilient in-product script runtime contains a representation of business ob
   + `email_sample_script.py` -- This the Python 3 version of the email sample script.
 + Datatable
   + `datatable-addrow-onincident.py` -- Adds a row to a datatable of an incident and fills the columns with values.
+
+## Query_Builder
+
++ `simple_query_builder_example.py` -- This script showcases the query_builder helper object and how to use it for querying incidents
