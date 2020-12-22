@@ -539,9 +539,10 @@ class EmailProcessor(object):
         in the incident. An artifact is created from the email message subject with the type "Email Subject".
         No return value.
         """
-        newReporterInfo = emailmessage.from.address
-        if emailmessage.from.name is not None:
-            newReporterInfo = u"{0} <{1}>".format(emailmessage.from.name, emailmessage.from.address)
+        newReporterInfo = emailmessage.sender.address
+        if emailmessage.sender.name is not None:
+            newReporterInfo = u"{0} <{1}>".format(
+                emailmessage.sender.name, emailmessage.sender.address)
             log.info(u"Adding reporter field \"{0}\"".format(newReporterInfo))
             incident.reporter = newReporterInfo
 
