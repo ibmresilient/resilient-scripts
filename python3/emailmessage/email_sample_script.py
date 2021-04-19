@@ -540,7 +540,7 @@ class EmailProcessor(object):
         No return value.
         """
         newReporterInfo = emailmessage.sender.address
-        if emailmessage.sender.name is not None:
+        if hasattr(emailmessage.sender, "name"):
             newReporterInfo = u"{0} <{1}>".format(
                 emailmessage.sender.name, emailmessage.sender.address)
             log.info(u"Adding reporter field \"{0}\"".format(newReporterInfo))
