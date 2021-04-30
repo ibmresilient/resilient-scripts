@@ -2,9 +2,9 @@
 
 This page describes the methods and fields available for use on the object type `incident`. Each method has a simple example of how to use it.
 
-<details><summary> Methods </summary>
-  <blockquote>
-<!-- Start of secion -->
+## Methods
+<blockquote>
+<!-- Start of section -->
   <!-- Start of method -->
   <details><summary> addArtifact(type, value, description) </summary>
 
@@ -37,7 +37,7 @@ This page describes the methods and fields available for use on the object type 
   Example:
   ```python
   for attachment in emailmessage.attachments:
-    incident.addEmailAttachment(attachment.id, attachment.presented_filename, attachment,presented_content_type)
+    incident.addEmailAttachment(attachment.id, attachment.presented_filename, attachment.presented_content_type)
   ```
   </details>
   <!-- End of method -->
@@ -55,8 +55,8 @@ This page describes the methods and fields available for use on the object type 
 
   Example:
   ```python
-  timestamp_millis = 1619785871000
-  incident.addMilestone('Milestone title', 'example milestone', timestamp_millis)
+  from datetime import datetime
+  incident.addMilestone('Milestone title', helper.createRichText('example milestone'), datetime.now())
   ```
   </details>
   <!-- End of method -->
@@ -109,17 +109,17 @@ This page describes the methods and fields available for use on the object type 
   <!-- End of method -->
 
 <!-- End of section -->
-  </blockquote>
-</details>
+</blockquote>
 
+<br>
 
-
-<details><summary> Fields </summary>
-
+## Fields
 These are the built in fields of an incident taken from the types rest API. `name` is the programatic name used to access a field within a script. Not all fields are writable. 
 
 Custom fields can be accesed using the `properties` attribute. For example, `incident.properties.mycustomfield`
 
+<details>
+<summary>Show all fields</summary>
 
 | Name | Display Name | Type | Notes |
 |---|:---|:---|:---|
