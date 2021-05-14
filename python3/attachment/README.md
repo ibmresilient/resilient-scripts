@@ -1,20 +1,22 @@
 # Attachment
 
-placeholder
+This page describes the methods and fields available for use on the object type `attachment`. Each method has a simple example of how to use it.
 
 ## Methods
 <blockquote>
 <!-- Start of section -->
   <!-- Start of method -->
-  <details><summary> method </summary>
+  <details><summary> getParentObject() </summary>
 
-  description
-
-  `param: type`
+  Returns the incident or task object that this artifact belongs to. The incident or task object can then be modified in the script.
 
   Example:
   ```python
-  code
+  # close the task if the attachment is jpeg
+  task = attachment.getParentObject()
+
+  if 'jpeg' in attachment.content_type:
+    task.status = 'C'
   ```
   </details>
   <!-- End of method -->
@@ -26,7 +28,7 @@ placeholder
 
 ## Fields
 
-placeholder
+These are some of the fields available to an attachment. Depending on the parent object there may be additional fields. `log.info(attachment)` will display all available fields.
 
 <details>
 <summary>Show all fields</summary>
