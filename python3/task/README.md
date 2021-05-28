@@ -1,20 +1,37 @@
 # Task
 
-placeholder
+This page describes the methods and fields available for use on the object type `Task`. Each method has a simple example of how to use it.
 
 ## Methods
 <blockquote>
 <!-- Start of section -->
   <!-- Start of method -->
-  <details><summary> method </summary>
+  <details><summary> addNote() </summary>
 
-  description
-
-  `param: type`
+  Adds a note to the task.
 
   Example:
   ```python
-  code
+  import datetime
+
+  seven_days_from_now = datetime.datetime.now() + datetime.timedelta(days=7)
+
+  task.due_date = seven_days_from_now
+  task.addNote("Extended due date of task by 7 days")
+  ```
+  </details>
+  <!-- End of method -->
+
+  <!-- Start of method -->
+  <details><summary> getParentObject() </summary>
+
+  Returns the incident object that this task belongs to. The incident object can then be modified.
+
+  Example:
+  ```python
+  task.status = 'C'
+  incident = task.getParentObject()
+  incident.addNote("The task: {} has been closed.".format(task.name))
   ```
   </details>
   <!-- End of method -->

@@ -1,20 +1,20 @@
 # Milestone
 
-placeholder
+This page describes the methods and fields available for use on the object type `Milestone`. Each method has a simple example of how to use it.
 
 ## Methods
 <blockquote>
 <!-- Start of section -->
   <!-- Start of method -->
-  <details><summary> method </summary>
+  <details><summary> getParentObject() </summary>
 
-  description
-
-  `param: type`
+  Returns the incident object that this milestone belongs to. The incident object can then be modified.
 
   Example:
   ```python
-  code
+  incident = milestone.getParentObject()
+
+  incident.addNote("Milestone title is: {}".format(milestone.title))
   ```
   </details>
   <!-- End of method -->
