@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![IBM Security](./IBM_Security_lockup_pos_RGB.png)
 
-This directory contains python scripts which can be used by the in-product scripting feature showcasing working with context objects in python 3\.
+This directory contains python scripts which can be used by the in-product scripting feature showcasing working with context objects in python 3\. Each object type contains a README with detailed documentation about the methods and fields available for each object type.
 
 ## Module Importation
 
