@@ -15,7 +15,11 @@ This page describes the methods and fields available for use on the object type 
   from bs4 import BeautifulSoup
 
   soup = BeautifulSoup(emailmessage.getBodyHtmlRaw(), "html.parser")
-  log.info(soup.prettify())
+
+  links = soup.find_all('a')
+
+  for link in links:
+    log.info("Found a link in the email. Text: {} href: {}".format(link.text, link.get('href')))
   ```
   </details>
   <!-- End of method -->
@@ -34,8 +38,9 @@ This page describes the methods and fields available for use on the object type 
   query_results = helper.findIncidents(query)
 
   if len(query_results) > 0:
-    incident = query_results[0]
-    emailmessage.associateWithIncident(incident)
+    inc = query_results[0]
+    emailmessage.associateWithIncident(inc)
+    incident.description = "This incident was associated with an email"
   else:
     log.info('Could not find any incident to associate with')
   ```

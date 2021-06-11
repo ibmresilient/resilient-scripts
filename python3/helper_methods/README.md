@@ -14,7 +14,7 @@ These helper methods can be used in any script.
 
   Example:
   ```python
-  incident.name = helper.createPlainText('Some boring text')
+  incident.name = helper.createPlainText('Some plain text')
   ```
   </details>
   <!-- End of method -->
