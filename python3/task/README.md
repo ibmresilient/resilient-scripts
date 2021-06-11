@@ -43,7 +43,7 @@ This page describes the methods and fields available for use on the object type 
 
 ## Fields
 
-placeholder
+These are the fields available on a Task Object Type.
 
 <details>
 <summary>Show all fields</summary>
