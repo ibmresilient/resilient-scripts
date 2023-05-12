@@ -90,5 +90,38 @@ These helper methods can be used in any script.
   </details>
   <!-- End of method -->
 
+ <!-- Start of method -->
+  <details><summary> getIncidentsCount(query) </summary>
+
+  Returns the number of incidents that match the query.
+
+  `query: queryBuilder object`
+
+  Example:
+  ```python
+    import datetime
+    
+    me = principal.id
+    last_week = datetime.datetime.now() - datetime.timedelta(days=7)
+    last_week = last_week.timestamp() * 1000
+    
+    # This query searches for incidents owned by the current user
+    query_builder.contains(fields.incident.owner_id, me)
+    # Created after 1 week ago
+    query_builder.isGreaterThan(fields.incident.create_date, last_week)
+    query_builder.sortByAscending(fields.incident.id)
+    query = query_builder.build()
+    
+    # returns the number of incidents match this query
+    incidents_count = helper.getIncidentsCount(query)
+    
+    if incidents_count > 0:
+      log.info('{} incidents created in the last week were assigned to this user'.format(incidents_count))
+    else:
+      log.info('found no incidents in the last week')
+  ```
+  </details>
+  <!-- End of method -->
+
 <!-- End of section -->
 </blockquote>
