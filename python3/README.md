@@ -46,4 +46,6 @@ The Resilient in-product script runtime contains a representation of business ob
 
 ## Query_Builder
 
-+ `simple_query_builder_example.py` -- This script showcases the query_builder helper object and how to use it for querying incidents
++ `simple_query_builder_example.py` -- This script showcases the query_builder helper object and how to use it for querying incidents.
++  `helper_query_builder_start_length_example.py` -- This script showcases the query_builder helper object and how to use it for querying incidents and, limit the results returned with start and length.
+
